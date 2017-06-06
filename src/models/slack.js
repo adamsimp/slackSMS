@@ -40,9 +40,9 @@ module.exports = {
         usersNumber = usersNumber.slice(1);
 
         // continues conversations in same channels, if they exist
-        if (validChannel(`sms${usersNumber}`)) {
+        if (validChannel(`gd`)) {
             slack.webhook({
-                channel: `#sms${usersNumber}`,
+                channel: `#gd`,
                 icon_emoji: ':flavortown:',
                 username: process.env.SLACK_BOT_NAME,
                 attachments: [{
