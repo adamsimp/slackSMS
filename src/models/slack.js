@@ -69,8 +69,8 @@ module.exports = {
                             color: '#3D91FC',
                             author_name: `Message from ${req.body.From}`,
                             title: req.body.Body,
-                            footer: 'powered by Twilio',
-                            footer_icon: 'https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAANCAAAAJGU3Yzg3ODY3LTRlMGEtNGRjNy1iMjIzLWRiZDBjZjU4NjgyYQ.png',
+                            footer: 'powered by Graham Digital',
+                            footer_icon: 'http://asimpson.s3.amazonaws.com/gdlogo.png',
                         }, ],
                     }, () => {});
                 }
