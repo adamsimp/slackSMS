@@ -43,7 +43,7 @@ module.exports = {
         if (validChannel(`sms${usersNumber}`)) {
             slack.webhook({
                 channel: `#sms${usersNumber}`,
-                icon_emoji: ':speech_balloon:',
+                icon_emoji: ':flavortown:',
                 username: process.env.SLACK_BOT_NAME,
                 attachments: [{
                     fallback: `from ${req.body.From}: ${req.body.Body}`,
@@ -62,7 +62,7 @@ module.exports = {
                 if (response) {
                     slack.webhook({
                         channel: `#sms${usersNumber}`,
-                        icon_emoji: ':speech_balloon:',
+                        icon_emoji: ':flavortown:',
                         username: process.env.SLACK_BOT_NAME,
                         attachments: [{
                             fallback: `from ${req.body.From}: ${req.body.Body}`,
