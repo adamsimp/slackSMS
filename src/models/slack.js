@@ -57,11 +57,11 @@ module.exports = {
         } else {
             // creates a new channel for new incoming numbers
             slack.api('channels.create', {
-                name: `sms${usersNumber}`,
+                name: `gd`,
             }, (err, response) => {
                 if (response) {
                     slack.webhook({
-                        channel: `#sms${usersNumber}`,
+                        channel: `#gd`,
                         icon_emoji: ':flavortown:',
                         username: process.env.SLACK_BOT_NAME,
                         attachments: [{
