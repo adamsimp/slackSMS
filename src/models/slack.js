@@ -79,7 +79,7 @@ module.exports = {
 
         // Send back Twilio an empty XML response to let them know we got the message
         res.writeHead(200, { 'Content-Type': 'text/xml' });
-        const twiml = [{ Response: 'test' }];
+        const twiml = [{ Response: [{ Message: 'test' }] }];
         res.end(xml(twiml));
     },
 };
